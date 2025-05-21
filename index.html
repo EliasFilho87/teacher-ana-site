@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ana Beatriz | English Teacher</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+  
+</head>
+<body>
+  <header class="uk-header"></header>
+
+  <header>
+   <div class="intro-section">
+  <div class="left-text">Ana<br>Beatriz</div>
+  <img src="images/ana-rabisco.png" alt="Ana Beatriz" class="profile-img" />
+  <div class="right-text">English<br>teacher</div>
+</div>
+  </header>
+
+  <img src="images/arabesco.png" alt="Divisor decorativo" class="arabesco-divider" />
+
+
+ <main class="bio">
+
+  <p>
+    Com mais de 7 anos de experiência no ensino da língua inglesa, Ana Beatriz oferece aulas personalizadas para diferentes perfis e necessidades. Seu trabalho se destaca pela sensibilidade, didática e resultados práticos — desde o ensino lúdico para crianças, inclusive aquelas no espectro autista (com elogios frequentes de pais e responsáveis), até o treinamento intensivo de conversação para adultos que buscam fluência para entrevistas, certificações ou oportunidades profissionais internacionais.
+  </p>
+  
+  <button class="contact-button" onclick="openWhatsApp()">
+  <img src="images/zap-logo.png" alt="WhatsApp" class="zap-icon">
+  Talk to the teacher
+</button>
+</main>
+
+<section class="advantages">
+  <div class="card">
+    <h3>Atendimento Personalizado</h3>
+    <p>Conteúdo adaptado ao seu ritmo, nível e objetivos pessoais ou profissionais.</p>
+  </div>
+  <div class="card">
+    <h3>Flexibilidade de Horários</h3>
+    <p>Você escolhe os melhores dias e horários para aprender com mais conforto.</p>
+  </div>
+  <div class="card">
+    <h3>Foco em Speaking</h3>
+    <p>Mais prática oral para você desenvolver fluência de verdade, sem travar.</p>
+  </div>
+  <div class="card">
+    <h3>Progresso Rápido</h3>
+    <p>Com foco 100% em você, a evolução acontece de forma mais eficaz e visível.</p>
+  </div>
+</section>
+<section class="testimonials">
+  <div class="testimonial-card">
+    <p>"Ana me ajudou a destravar minha fala em inglês. Hoje me comunico com confiança!"</p>
+    <span>— João Victor</span>
+  </div>
+  <div class="testimonial-card">
+    <p>"As aulas são leves e ao mesmo tempo muito eficazes. Ana é maravilhosa!"</p>
+    <span>— Mariana Lopes</span>
+  </div>
+  <div class="testimonial-card">
+    <p>"Minha filha ama as aulas com Ana. Ela aprendeu mais em 3 meses do que na escola em 1 ano."</p>
+    <span>— Carla Menezes</span>
+  </div>
+  <div class="testimonial-card">
+    <p>"Precisava passar em uma entrevista em inglês e consegui graças às aulas personalizadas."</p>
+    <span>— Felipe Rocha</span>
+  </div>
+  <div class="testimonial-card">
+    <p>"A Ana tem uma didática incrível, além de ser muito paciente e atenciosa."</p>
+    <span>— Luiza F.</span>
+  </div>
+  <div class="testimonial-card">
+    <p>"Nunca imaginei que poderia gostar tanto de estudar inglês. Recomendo 100%!"</p>
+    <span>— Rafael Tavares</span>
+  </div>
+    <div class="testimonial-card">
+    <p>"Nunca imaginei que poderia gostar tanto de estudar inglês. Recomendo 100%!"</p>
+    <span>— Rafael Tavares</span>
+  </div>
+    <div class="testimonial-card">
+    <p>"Nunca imaginei que poderia gostar tanto de estudar inglês. Recomendo 100%!"</p>
+    <span>— Rafael Tavares</span>
+  </div>
+</section>
+
+
+  <script>
+  function openWhatsApp() {
+    const phone = 
+    "5584988378757"; // Ana Beatriz
+    const message = encodeURIComponent("Hi! I'm interested in your English lessons.");
+    const link = `https://wa.me/${phone}?text=${message}`;
+    window.open(link, '_blank');
+  }
+</script>
+
+<!-- Linha animada como no header -->
+<div class="footer-line"></div>
+<footer class="site-footer">
+  <p>&copy; 2025 Todos os direitos reservados · Desenvolvido por <strong>Elias Filho</strong></p>
+</footer>
+
+</body>
+</html>

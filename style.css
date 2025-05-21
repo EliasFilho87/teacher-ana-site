@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  text-align: center;
+  padding: 40px;
+}
+
+.tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.tagline h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.profile-img {
+  width: 280px; /* Aumentado para destaque */
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 0;     /* ❌ remove a forma circular */
+  border: none;         /* ❌ remove a borda cinza */
+}
+
+.bio {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+  font-family: 'Cascadia Code', monospace;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* ✅ aumenta o espaço entre texto e botão */
+}
+
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /* espaço entre o ícone e o texto */
+  padding: 14px 14px;
+  font-size: 18px;
+  font-family: 'Cascadia Code', monospace;
+  color: white;
+  background: linear-gradient(to right, #00247d, #cf142b, #ffffff);
+  background-size: 300% 100%;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-position 3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button:hover {
+  transform: scale(1.06);
+  background-position: 100% 0;
+}
+
+.zap-icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+.nome-ana {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2000px;            /* Aumenta o tamanho */
+  margin-top: 20px;
+  margin-bottom: -10px;       /* Aproxima da imagem */
+  color: #2c3e50;
+}
+
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px; /* 🔧 reduz o espaço entre os blocos */
+  margin-top: 40px;
+}
+
+.left-text, .right-text {
+  font-family: 'Indie Flower', cursive;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #2c3e50;
+  text-align: right;         /* 🔧 alinha o texto mais perto da imagem */
+  max-width: 800px;          /* 🔧 limita para não "empurrar" */
+}
+
+
+.right-text {
+  font-family: 'Indie Flower', cursive;
+  font-size: 90px;
+  line-height: 1.2;
+  color: #2c3e50;
+  text-align: left;     /* ✅ Alinha à esquerda */
+}
+
+.left-text {
+  font-family: 'Indie Flower', cursive;
+  font-size: 90px;
+  line-height: 1.2;
+  color: #2c3e50;
+  text-align: right;     /* ✅ Alinha à esquerda */
+}
+
+
+
+.profile-img {
+  width: 240px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+
+.uk-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  z-index: 9999;
+  background: linear-gradient(
+    to right,
+    #00247d,
+    #00247d 20%,
+    #cf142b 50%,
+    #ffffff 80%
+  );
+  background-size: 200% auto;
+  animation: smoothStripe 8s ease-in-out infinite alternate;
+}
+
+@keyframes smoothStripe {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Remove espaços e compensa o header fixo */
+body {
+  margin: 0;
+  padding-top: 6px;
+}
+
+
+.arabesco-divider {
+  display: block;
+  margin: 5px auto 5px auto;
+  width: 400px;
+  height: auto;
+  opacity: 0.8;
+}
+
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  margin: 50px auto;
+  max-width: 900px;  /* igual ao texto principal */
+  padding: 0 20px;
+  flex-wrap: nowrap; /* ❗ impede que quebrem para a linha de baixo */
+}
+
+.card {
+  flex: 1 1 0;               /* força os 4 a ocuparem o mesmo espaço */
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+  font-family: 'Cascadia Code', monospace;
+  min-width: 200px;          /* ❗ evita encolher demais */
+}
+
+.card h3 {
+  color: #00247d;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}.advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  margin: 50px auto;
+  max-width: 900px; /* mantém alinhado com o conteúdo */
+  padding: 0;
+  flex-wrap: nowrap; /* mantém 1 linha só */
+}
+
+.card {
+  width: 205px; /* 4x 205 + 3x20(gap) = 900px certinho */
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+  font-family: 'Cascadia Code', monospace;
+}
+
+.card h3 {
+  color: #00247d;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px 40px;
+  border-radius: ;
+  background: linear-gradient(to right, #00247d, #cf142b); /* 🇬🇧 vibe */
+  margin-bottom: 60px;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Cascadia Code', monospace;
+  font-size: 16px;
+  color: #2c3e50;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.testimonial-card span {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  color: #00247d;
+}
+
+
+.footer-line {
+  height: 6px;
+  width: 100%; /* 👈 substituído */
+  background: linear-gradient(to right, #00247d, #cf142b, #ffffff);
+  background-size: 200% auto;
+  animation: smoothStripe 8s ease-in-out infinite alternate;
+  margin: 0; /* 👈 remove possíveis quebras visuais */
+  padding: 0;
+}
+
+
+.site-footer {
+  background-color: #111;
+  color: #ddd;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  font-family: 'Cascadia Code', monospace;
+  width: 100%; /* 👈 substituído */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Opcional: garante que o footer fique colado mesmo com pouco conteúdo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  text-align: center;
+  padding: 40px 0;
+  margin: 0;
+  padding-top: 6px; /* compensando o header fixo */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+html, {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+.site-footer strong {
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
